@@ -70,11 +70,11 @@ inline vec3 operator*(double t, const vec3& v) {
 }
 
 inline vec3 operator*(const vec3& v, double t) {
-    return v*t;
+    return t * v;
 }
 
 inline vec3 operator/(const vec3& v, double t) {
-    return v*(1/t);
+    return (1/t) * v;
 }
 
 inline double dot(const vec3& u, const vec3& v) {
